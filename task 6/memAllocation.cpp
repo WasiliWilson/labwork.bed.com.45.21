@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int numberOfElements = 0;
+    int numberOfElements;
     int* dynamicArray = nullptr;
 
     cout<<"How many numbers would you like to type? ";
@@ -23,7 +23,7 @@ int main(){
             cout<<dynamicArray[j] <<" , ";
         }
 
-        delete[] dynamicArray;
+        delete dynamicArray;
     }
 
     return 0;
